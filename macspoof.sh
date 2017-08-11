@@ -14,6 +14,12 @@ OPTIONS:
 EOF
 } 
 
+# validate super-user privileges on start
+if [[ $EUID -ne 0 ]]
+then
+    usage
+    exit 1
+fi
 
 function getmac(){
     # first byte need to be even number
