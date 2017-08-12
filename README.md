@@ -17,10 +17,10 @@ This script must be run with super-user privileges.
 
 ### Examples
 
-Change with generic mac:
+Change with random mac address:
 
 `sudo ./macspoof.sh -i en0`
 
-Change with specific mac:
+Change with specific mac address:
 
 `sudo ./macspoof.sh -i en0 -m a0:99:9b:0c:e0:77`
